@@ -1,0 +1,15 @@
+﻿2/21/2017
+-Fixed a bug where when you save a tag on a file thats playing it doesnt change the color back green and select it
+-Player now saves the last files that were in the playlist when the program was closed
+2/20/2017
+-Fixed an issue when moving the currently playing file then playing another file right after causes the last playing file to stay green instead of turning to white
+-Fixed a bug in the load libary code
+-Now you can select multiple files in the playlist and edit their tags
+-Fixed bug when clicking on the player slider it would sometimes not jump to the postion where the mouse was now it does 100% of the time
+2/18/2017
+-Now allows you to drag and drop files in the playlist to move them around
+-Fixed the issue with the volume reseting back to 50% when hitting the stop button
+4/19/2016
+-Added mass file renamer and album art
+3/7/2016
+-Started Project

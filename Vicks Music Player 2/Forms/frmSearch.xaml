@@ -1,0 +1,23 @@
+﻿<Window x:Name="Search" x:Class="Vicks_Music_Player_2.Forms.frmSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vicks_Music_Player_2.Forms"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        Title="Search"  Height="272" Width="448" WindowStartupLocation="CenterScreen" Background="Black" ResizeMode="CanMinimize" Icon="/Icons/icon.ico" Loaded="Search_Loaded">
+    <StackPanel>
+        <TextBox x:Name="txtSearch" Height="28" TextWrapping="Wrap" Width="442" RenderTransformOrigin="0.5,0.5" Background="Black" Foreground="White" TextChanged="textBox_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.016"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.062"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <ListBox x:Name="lstSearch" Height="215" Width="442" Background="Black" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Hidden" MouseDoubleClick="lstSearch_MouseDoubleClick"/>
+    </StackPanel>
+</Window>
