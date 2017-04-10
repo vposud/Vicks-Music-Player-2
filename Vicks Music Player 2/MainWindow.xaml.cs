@@ -182,6 +182,9 @@ namespace Vicks_Music_Player_2
             //sets the item source
             lstMain.ItemsSource = PlayListItems;
 
+            //sets the value of current index to -1 to not cause error on first playing file
+            CurrentIndex = -1;
+
             //if opened with a file then earse the playlist and play that file
             String[] arguments = Environment.GetCommandLineArgs();
             if (arguments.Length >= 2)
@@ -202,9 +205,6 @@ namespace Vicks_Music_Player_2
                 //sets the album art image to default
                 imageAlbumArt.Source = new BitmapImage(new Uri("Icons/Images/No_Album.jpg", UriKind.Relative));
             }
-
-            //sets the value of current index to -1 to not cause error on first playing file
-            CurrentIndex = -1;
 
             //loads settings
             isShuffle = ini.IniReadValue("Settings", "Shuffle");
